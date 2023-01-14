@@ -1,0 +1,27 @@
+<div class="loginMainBackgroud">
+
+    <div class="container posRela  ">
+        <div class="card centerLogin  bg-transparent text-light ">
+            <!-- <div class="card-head bg bg-dark text-white borderTemp"> -->
+            <!-- </div> -->
+            <div class="card-body  borderTemp">
+                <h3 class="texCenter p-1">Welcome IBET Nissan</h3>
+                <form #loginForm="ngForm" (ngSubmit)="submitLogin(loginForm)">
+                    <label for="username">Username </label><br>
+                    <input ngModel class="hoveOninput inpuBtnWidth mt-1 input-group-text bg-transparent text-light"
+                        type="text" name="username" placeholder="Enter Username"><br>
+                    <label for="password"> Password</label><br>
+                    <input ngModel
+                        class="hoveOninput inpuBtnWidth mt -1 input-group-text bg-transparent text-light form"
+                        type="password" name="password" placeholder="Password">
+                    <button class="hoveOninput inpuBtnWidth mt-2 btn btn-dark">Login</button>
+                </form>
+                <!-- datafrom : {{dataFromDB.data[0]}} -->
+                <!-- <ul *ngFor = "let data of dataFromDB"> -->
+                <!-- <li>{{data.role | json}}</li> -->
+                <!-- </ul> -->
+            </div>
+        </div>
+    </div>
+
+</div>
